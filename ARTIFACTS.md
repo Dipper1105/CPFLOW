@@ -15,26 +15,24 @@ model-checkpoint archive.
 - Image-derived phenotype tables and figures
 - Publication-ready PNG, PDF, and SVG exports
 
-## Stored in the private GitHub Release
+## Model weights
 
-| Asset | Purpose |
-|---|---|
-| `cpflow-combined-0008000.pt` | Final combined model used for the main RNA comparison |
-| `cpflow-imageft2-0001000.pt` | Final image-finetuned model used for the strongest image results |
-| `checkpoints-manifest.sha256` | SHA-256 integrity checks for both model assets |
-
-The Release assets use descriptive names; their original project paths are:
+Model weights are intentionally not included in the current GitHub snapshot.
+The final local weights remain available at:
 
 ```text
 results_combined/000-CPFlow-B-2-noise/checkpoints/0008000.pt
 results_image_finetune_round2/000-CPFlow-B-2-imageft2/checkpoints/0001000.pt
 ```
 
+A representative final weight can be published separately through a GitHub
+Release, Hugging Face, or Zenodo if direct inference or archival distribution
+becomes part of the release goal.
+
 ## Deliberately excluded
 
-Intermediate checkpoints, optimizer-heavy `last.pt` snapshots, copied
-`start_from_*.pt` states, raw candidate-image sweeps, duplicate TIFF exports,
-IDE metadata, Python caches, and transient distributed-training state are not
-part of the GitHub copy. They do not add evidence beyond the retained final
-models, metrics, reports, and figures.
-
+All checkpoints, optimizer-heavy `last.pt` snapshots, copied `start_from_*.pt`
+states, raw candidate-image sweeps, duplicate TIFF exports, IDE metadata,
+Python caches, and transient distributed-training state are not part of the
+GitHub copy. The retained metrics, reports, and figures preserve the result
+evidence while keeping the repository focused and lightweight.

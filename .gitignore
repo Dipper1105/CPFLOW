@@ -7,8 +7,8 @@ __pycache__/
 torchelastic_*/
 
 # Large and intermediate experiment artifacts are kept out of Git history.
-# Curated final reports/figures are force-added; final model weights are stored
-# as assets in the repository's private GitHub Release. See ARTIFACTS.md.
+# Curated final reports/figures are force-added. Model weights are intentionally
+# excluded from the current GitHub snapshot. See ARTIFACTS.md.
 comparison_outputs/
 comparison_smoke/
 results_*/
