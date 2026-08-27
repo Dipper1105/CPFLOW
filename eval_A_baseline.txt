@@ -1,0 +1,9 @@
+/disk1/nicole/miniconda3/envs/MultiVCDiff/lib/python3.10/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/data1/nicole/CPgenes/CPFLOW/evaluate.py:124: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(args.ckpt, map_location=f"cuda:{device}")
+An error occurred while trying to fetch /data1/nicole/models/sd-vae-ft-ema: Error no file named diffusion_pytorch_model.safetensors found in directory /data1/nicole/models/sd-vae-ft-ema.
+Defaulting to unsafe serialization. Pass `allow_pickle=False` to raise an error instead.
+# checkpoint: results_expA/000-CPFlow-B-2-noise/checkpoints/0008000.pt
+retrieval: {'recall@1': 0.00390625, 'recall@5': 0.01171875, 'matched_cosine': 0.006400375626981258, 'n': 256}
+rna_fidelity: {'rna_pearson_mean': 0.9403910380200677, 'rna_mse_mean': 0.7690355411984704, 'n_drugs': 44}

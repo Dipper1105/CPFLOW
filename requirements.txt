@@ -1,0 +1,16 @@
+# Runtime dependencies (matches MultiVCDiff's environment.yaml pip section).
+# Install into the existing MultiVCDiff conda env, or a fresh one:
+#   conda create -n cpflow python=3.10 && conda activate cpflow && pip install -r requirements.txt
+torch==2.5.1
+torchvision==0.20.1
+diffusers==0.32.2
+timm==1.0.15
+scanpy==1.11.2
+anndata==0.11.4
+rdkit==2025.3.3
+numpy==2.2.6
+pandas==2.3.0
+scikit-learn==1.7.0
+Pillow==9.2.0
+tqdm==4.67.1
+wandb==0.20.1

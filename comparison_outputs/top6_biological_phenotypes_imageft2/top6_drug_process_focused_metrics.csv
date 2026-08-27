@@ -1,0 +1,19 @@
+drug,biological_process,metric,metric_label,real_value,generated_value,generated_real_ratio,delta_generated_minus_real,percent_delta_generated_vs_real,agreement_score
+nystatin,membrane sterol binding / membrane stress,mitochondrial_brightness_proxy,Mitochondrial brightness proxy,0.39078548550605774,0.4027566611766815,1.0306309867781707,0.01197117567062378,3.0633545720296436,0.9698309066516261
+nystatin,membrane sterol binding / membrane stress,cell_area_fraction,Cell area fraction,0.2364501953125,0.24936676025390625,1.0546225402850542,0.01291656494140625,5.462676948761196,0.9468384710215956
+nystatin,membrane sterol binding / membrane stress,clustering_proxy,Cell clustering proxy,0.013908835018329294,0.019182058480996536,1.3790284683980736,0.005273223462667242,37.910035997685085,0.6844769151317368
+puromycin,translation inhibition / growth and proteotoxic stress,cell_count_proxy,Cell count proxy,237.0,208.0,0.8776371270985776,-29.0,-12.236286868201322,0.8848272341490859
+puromycin,translation inhibition / growth and proteotoxic stress,mean_cell_area_proxy,Mean cell area proxy,0.0004902127422845223,0.0006038592411898539,1.2293232426777805,0.00011364649890533156,23.13590204862901,0.7934545484548436
+puromycin,translation inhibition / growth and proteotoxic stress,edge_texture,Edge/texture strength,0.0821005254983902,0.06681422144174576,0.8137999998922775,-0.01528630405664444,-18.618782006607375,0.8301176675840694
+pd-98059,MEK-ERK inhibition / proliferation-cytoskeleton signalling,cell_count_proxy,Cell count proxy,210.0,258.0,1.2285714227210884,48.0,22.85714274829932,0.7956694625077276
+pd-98059,MEK-ERK inhibition / proliferation-cytoskeleton signalling,cell_area_fraction,Cell area fraction,0.37277984619140625,0.3668365478515625,0.9840541744551125,-0.00594329833984375,-1.5943143003629894,0.9841832761694824
+pd-98059,MEK-ERK inhibition / proliferation-cytoskeleton signalling,edge_texture,Edge/texture strength,0.059766434133052826,0.061554573476314545,1.0299015570801187,0.0017881393432617188,2.991828859979175,0.970524833251681
+hydroxyurea,S-phase arrest / DNA replication stress,nucleus_to_cytoplasm_area,N:C area ratio,0.253365589193513,0.37618027474230775,1.4847272323463052,0.12281468554879477,48.473117919661064,0.6158627312279208
+hydroxyurea,S-phase arrest / DNA replication stress,nuclear_area_fraction,Nuclear area fraction,0.06552886962890625,0.09760284423828125,1.4894405374374056,0.032073974609375,48.945579765393994,0.6129598776383983
+hydroxyurea,S-phase arrest / DNA replication stress,cell_count_proxy,Cell count proxy,118.0,183.0,1.5508474444843436,65.0,55.08474529589199,0.5764610796739228
+quercetin,redox-mitochondrial and cytoskeletal stress,mitochondrial_brightness_proxy,Mitochondrial brightness proxy,0.4914214015007019,0.38680005073547363,0.7871030086423954,-0.10462135076522827,-21.28949564483353,0.8082410332662544
+quercetin,redox-mitochondrial and cytoskeletal stress,mitochondrial_enrichment_proxy,Mitochondrial enrichment proxy,1.3300445201008806,1.5671340266678677,1.1782559340893872,0.23708950656698713,17.825668594335365,0.8367276197029978
+quercetin,redox-mitochondrial and cytoskeletal stress,edge_texture,Edge/texture strength,0.0707903727889061,0.055859364569187164,0.7890702266186457,-0.014931008219718933,-21.091564736626793,0.8098423763375464
+cyclophosphamide,alkylating DNA damage / growth arrest,nucleus_to_cytoplasm_area,N:C area ratio,0.205881292272964,0.3334226093488393,1.6194817226280884,0.12754131707587532,61.94865797723769,0.5382207000635743
+cyclophosphamide,alkylating DNA damage / growth arrest,cell_count_proxy,Cell count proxy,121.0,120.0,0.9917355289939213,-1.0,-0.8264462741616011,0.991769594045659
+cyclophosphamide,alkylating DNA damage / growth arrest,local_contrast,Local contrast,0.43529412150382996,0.5098038911819458,1.171168400465201,0.07450976967811584,17.11706977572003,0.842677717997561

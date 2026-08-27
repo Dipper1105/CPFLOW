@@ -1,0 +1,17 @@
+# Local editor and Python caches
+.idea/
+__pycache__/
+*.py[cod]
+
+# Ephemeral distributed-training state
+torchelastic_*/
+
+# Large and intermediate experiment artifacts are kept out of Git history.
+# Curated final reports/figures are force-added; final model weights are stored
+# as assets in the repository's private GitHub Release. See ARTIFACTS.md.
+comparison_outputs/
+comparison_smoke/
+results_*/
+
+# Local release packaging workspace
+.release-staging/

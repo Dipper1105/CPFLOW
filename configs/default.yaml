@@ -1,0 +1,50 @@
+# CPFLOW default configuration (documentation / reference).
+# The training scripts pass these as CLI flags; this file records the intended
+# defaults and explains each knob. It is not auto-loaded.
+
+data:
+  h5ad_path: /data/pr/DiT_AIVCdiff/pr_tutorial/DiT_input_512_one_image_one_rna.h5ad
+  image_dir: null              # prepended to image_column paths if set
+  image_column: merged_image
+  drug_column: compound
+  smiles_column: smiles
+  batch_column: plate          # plate/batch column for same-batch control pairing (null to disable)
+  control_value: DMSO          # value of drug_column marking control wells
+  image_size: 512
+  num_rna_features: 977
+  fp_size: 1024
+  comb_num: 1                  # >1 sums fingerprints of combined SMILES (a+b)
+
+model:
+  name: CPFlow-XL/2
+  rna_tokens: 8                # RNA latent tokens (1 == MultiVCDiff behaviour)
+  fusion_every: 4              # insert cross-attn fusion every N blocks (0 disables)
+  drug_dropout_prob: 0.1       # classifier-free guidance dropout
+
+flow:
+  sigma: 0.1                   # noisy-interpolant std (0 == plain rectified flow)
+
+curriculum:
+  stage1: noise                # noise -> treated warmup
+  stage2: paired               # control -> treated fine-tune (resume stage1 ckpt)
+
+loss_weights:
+  img_loss_weight: 1.0
+  rna_loss_weight: 1.0
+  align_weight: 0.1            # InfoNCE image<->RNA contrastive alignment
+  corr_weight: 0.05            # gene-covariance regulariser
+  info_nce_temp: 0.1
+  uncertainty_weighting: false # if true, learn img/rna balance (Kendall 2018)
+
+optim:
+  lr_stage1: 1.0e-4
+  lr_stage2: 5.0e-5
+  grad_clip: 1.0
+  epochs: 50
+  global_batch_size: 36
+
+sampling:
+  source: ctrl                 # ctrl (stage2) or noise (stage1)
+  num_steps: 50
+  method: heun                 # euler | heun
+  cfg_scale: 1.5

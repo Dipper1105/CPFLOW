@@ -1,0 +1,76 @@
+[[34m2026-07-06 16:15:41[0m] Experiment directory: /data1/nicole/CPgenes/CPFLOW/results_image_finetune_round2/000-CPFlow-B-2-imageft2
+[[34m2026-07-06 16:15:47[0m] CPFlow parameters: 163,462,369
+[[34m2026-07-06 16:15:47[0m] Loading checkpoint: /data1/nicole/CPgenes/CPFLOW/results_image_finetune_round2/000-CPFlow-B-2-imageft2/checkpoints/start_from_imageft.pt
+[[34m2026-07-06 16:16:10[0m] Beginning epoch 0...
+[[34m2026-07-06 16:16:35[0m] (step=0000020) loss=5.8748 img=0.5874 rna=0.0218 align=0.0078 corr=0.0001 steps/s=0.80
+[[34m2026-07-06 16:16:58[0m] (step=0000040) loss=5.9544 img=0.5953 rna=0.0225 align=0.0067 corr=0.0001 steps/s=0.87
+[[34m2026-07-06 16:17:21[0m] (step=0000060) loss=6.0062 img=0.6005 rna=0.0203 align=0.0078 corr=0.0000 steps/s=0.87
+[[34m2026-07-06 16:17:45[0m] (step=0000080) loss=5.9682 img=0.5966 rna=0.0331 align=0.0083 corr=0.0001 steps/s=0.86
+[[34m2026-07-06 16:18:08[0m] (step=0000100) loss=6.1508 img=0.6148 rna=0.0455 align=0.0090 corr=0.0001 steps/s=0.86
+[[34m2026-07-06 16:18:31[0m] (step=0000120) loss=6.0834 img=0.6081 rna=0.0505 align=0.0077 corr=0.0001 steps/s=0.86
+[[34m2026-07-06 16:19:11[0m] [epoch 0] refreshed last.pt @ step 134
+[[34m2026-07-06 16:19:11[0m] Beginning epoch 1...
+[[34m2026-07-06 16:19:19[0m] (step=0000140) loss=6.0126 img=0.6011 rna=0.0380 align=0.0084 corr=0.0001 steps/s=0.42
+[[34m2026-07-06 16:19:41[0m] (step=0000160) loss=6.0351 img=0.6034 rna=0.0237 align=0.0075 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:20:03[0m] (step=0000180) loss=6.0265 img=0.6025 rna=0.0228 align=0.0074 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:20:26[0m] (step=0000200) loss=6.1352 img=0.6134 rna=0.0250 align=0.0078 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:20:48[0m] (step=0000220) loss=6.0668 img=0.6065 rna=0.0373 align=0.0083 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:21:11[0m] (step=0000240) loss=6.0493 img=0.6047 rna=0.0450 align=0.0087 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:21:34[0m] (step=0000260) loss=5.7733 img=0.5771 rna=0.0501 align=0.0083 corr=0.0002 steps/s=0.89
+[[34m2026-07-06 16:22:06[0m] [epoch 1] refreshed last.pt @ step 268
+[[34m2026-07-06 16:22:06[0m] Beginning epoch 2...
+[[34m2026-07-06 16:22:21[0m] (step=0000280) loss=6.1049 img=0.6103 rna=0.0293 align=0.0081 corr=0.0001 steps/s=0.42
+[[34m2026-07-06 16:22:44[0m] (step=0000300) loss=6.0913 img=0.6090 rna=0.0217 align=0.0071 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:23:07[0m] (step=0000320) loss=5.9720 img=0.5971 rna=0.0206 align=0.0081 corr=0.0000 steps/s=0.87
+[[34m2026-07-06 16:23:34[0m] (step=0000340) loss=6.0392 img=0.6038 rna=0.0275 align=0.0080 corr=0.0001 steps/s=0.75
+[[34m2026-07-06 16:23:57[0m] (step=0000360) loss=6.0673 img=0.6065 rna=0.0407 align=0.0090 corr=0.0001 steps/s=0.85
+[[34m2026-07-06 16:24:20[0m] (step=0000380) loss=6.0704 img=0.6068 rna=0.0457 align=0.0110 corr=0.0001 steps/s=0.85
+[[34m2026-07-06 16:24:44[0m] (step=0000400) loss=5.8727 img=0.5870 rna=0.0496 align=0.0087 corr=0.0002 steps/s=0.84
+[[34m2026-07-06 16:25:10[0m] [epoch 2] refreshed last.pt @ step 402
+[[34m2026-07-06 16:25:10[0m] Beginning epoch 3...
+[[34m2026-07-06 16:25:33[0m] (step=0000420) loss=5.9729 img=0.5972 rna=0.0234 align=0.0070 corr=0.0001 steps/s=0.41
+[[34m2026-07-06 16:25:57[0m] (step=0000440) loss=5.9880 img=0.5987 rna=0.0204 align=0.0071 corr=0.0001 steps/s=0.84
+[[34m2026-07-06 16:26:20[0m] (step=0000460) loss=6.0531 img=0.6052 rna=0.0212 align=0.0073 corr=0.0001 steps/s=0.85
+[[34m2026-07-06 16:26:43[0m] (step=0000480) loss=6.0912 img=0.6090 rna=0.0291 align=0.0079 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:27:05[0m] (step=0000500) loss=5.9743 img=0.5972 rna=0.0429 align=0.0091 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:27:41[0m] Saved checkpoint to /data1/nicole/CPgenes/CPFLOW/results_image_finetune_round2/000-CPFlow-B-2-imageft2/checkpoints/0000500.pt (+ last.pt)
+[[34m2026-07-06 16:28:03[0m] (step=0000520) loss=5.9626 img=0.5960 rna=0.0467 align=0.0081 corr=0.0001 steps/s=0.35
+[[34m2026-07-06 16:28:45[0m] [epoch 3] refreshed last.pt @ step 536
+[[34m2026-07-06 16:28:45[0m] Beginning epoch 4...
+[[34m2026-07-06 16:28:51[0m] (step=0000540) loss=5.9283 img=0.5926 rna=0.0388 align=0.0076 corr=0.0001 steps/s=0.42
+[[34m2026-07-06 16:29:13[0m] (step=0000560) loss=5.9990 img=0.5998 rna=0.0218 align=0.0079 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:29:35[0m] (step=0000580) loss=6.0018 img=0.6001 rna=0.0210 align=0.0085 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:29:58[0m] (step=0000600) loss=5.9665 img=0.5965 rna=0.0209 align=0.0077 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:30:20[0m] (step=0000620) loss=6.0160 img=0.6014 rna=0.0358 align=0.0090 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:30:43[0m] (step=0000640) loss=6.1034 img=0.6101 rna=0.0426 align=0.0079 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:31:05[0m] (step=0000660) loss=6.1283 img=0.6126 rna=0.0485 align=0.0076 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:31:41[0m] [epoch 4] refreshed last.pt @ step 670
+[[34m2026-07-06 16:31:41[0m] Beginning epoch 5...
+[[34m2026-07-06 16:31:53[0m] (step=0000680) loss=5.9673 img=0.5966 rna=0.0300 align=0.0080 corr=0.0001 steps/s=0.42
+[[34m2026-07-06 16:32:16[0m] (step=0000700) loss=5.9265 img=0.5925 rna=0.0220 align=0.0075 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:32:38[0m] (step=0000720) loss=5.9545 img=0.5953 rna=0.0208 align=0.0080 corr=0.0001 steps/s=0.88
+[[34m2026-07-06 16:33:01[0m] (step=0000740) loss=5.9729 img=0.5972 rna=0.0259 align=0.0076 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:33:23[0m] (step=0000760) loss=5.8984 img=0.5896 rna=0.0400 align=0.0100 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:33:46[0m] (step=0000780) loss=6.0403 img=0.6038 rna=0.0442 align=0.0078 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:34:08[0m] (step=0000800) loss=6.1862 img=0.6184 rna=0.0477 align=0.0092 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:34:37[0m] [epoch 5] refreshed last.pt @ step 804
+[[34m2026-07-06 16:34:37[0m] Beginning epoch 6...
+[[34m2026-07-06 16:34:56[0m] (step=0000820) loss=6.0535 img=0.6052 rna=0.0244 align=0.0085 corr=0.0001 steps/s=0.42
+[[34m2026-07-06 16:35:19[0m] (step=0000840) loss=6.1016 img=0.6100 rna=0.0222 align=0.0079 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:35:41[0m] (step=0000860) loss=5.9550 img=0.5954 rna=0.0206 align=0.0084 corr=0.0000 steps/s=0.89
+[[34m2026-07-06 16:36:03[0m] (step=0000880) loss=6.0041 img=0.6003 rna=0.0289 align=0.0093 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:36:26[0m] (step=0000900) loss=5.9512 img=0.5949 rna=0.0422 align=0.0093 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:36:48[0m] (step=0000920) loss=5.9107 img=0.5908 rna=0.0476 align=0.0102 corr=0.0002 steps/s=0.89
+[[34m2026-07-06 16:37:33[0m] [epoch 6] refreshed last.pt @ step 938
+[[34m2026-07-06 16:37:33[0m] Beginning epoch 7...
+[[34m2026-07-06 16:37:37[0m] (step=0000940) loss=6.0274 img=0.6025 rna=0.0428 align=0.0081 corr=0.0001 steps/s=0.41
+[[34m2026-07-06 16:37:59[0m] (step=0000960) loss=6.1064 img=0.6105 rna=0.0219 align=0.0086 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:38:22[0m] (step=0000980) loss=5.8878 img=0.5887 rna=0.0234 align=0.0078 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:38:44[0m] (step=0001000) loss=6.0314 img=0.6030 rna=0.0199 align=0.0078 corr=0.0000 steps/s=0.89
+[[34m2026-07-06 16:39:19[0m] Saved checkpoint to /data1/nicole/CPgenes/CPFLOW/results_image_finetune_round2/000-CPFlow-B-2-imageft2/checkpoints/0001000.pt (+ last.pt)
+[[34m2026-07-06 16:39:42[0m] (step=0001020) loss=6.0670 img=0.6065 rna=0.0345 align=0.0091 corr=0.0001 steps/s=0.35
+[[34m2026-07-06 16:40:04[0m] (step=0001040) loss=6.0281 img=0.6026 rna=0.0420 align=0.0094 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:40:27[0m] (step=0001060) loss=5.9936 img=0.5991 rna=0.0525 align=0.0080 corr=0.0001 steps/s=0.89
+[[34m2026-07-06 16:41:04[0m] [epoch 7] refreshed last.pt @ step 1072
+[[34m2026-07-06 16:41:28[0m] [final] flushed last.pt @ step 1072
+[[34m2026-07-06 16:41:28[0m] Done!

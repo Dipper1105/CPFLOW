@@ -1,0 +1,550 @@
+W0703 15:36:43.234438 349127 /data1/nicole/miniconda3/envs/MultiVCDiff/lib/python3.10/site-packages/torch/distributed/run.py:793] 
+W0703 15:36:43.234438 349127 /data1/nicole/miniconda3/envs/MultiVCDiff/lib/python3.10/site-packages/torch/distributed/run.py:793] *****************************************
+W0703 15:36:43.234438 349127 /data1/nicole/miniconda3/envs/MultiVCDiff/lib/python3.10/site-packages/torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0703 15:36:43.234438 349127 /data1/nicole/miniconda3/envs/MultiVCDiff/lib/python3.10/site-packages/torch/distributed/run.py:793] *****************************************
+Starting rank=1, seed=1, world_size=2.
+/disk1/nicole/miniconda3/envs/MultiVCDiff/lib/python3.10/site-packages/anndata/_core/aligned_df.py:68: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+Starting rank=0, seed=0, world_size=2.
+[[34m2026-07-03 15:37:04[0m] Experiment directory: results_combined/000-CPFlow-B-2-noise
+/disk1/nicole/miniconda3/envs/MultiVCDiff/lib/python3.10/site-packages/anndata/_core/aligned_df.py:68: ImplicitModificationWarning: Transforming to str index.
+  warnings.warn("Transforming to str index.", ImplicitModificationWarning)
+An error occurred while trying to fetch /data1/nicole/models/sd-vae-ft-ema: Error no file named diffusion_pytorch_model.safetensors found in directory /data1/nicole/models/sd-vae-ft-ema.
+Defaulting to unsafe serialization. Pass `allow_pickle=False` to raise an error instead.
+An error occurred while trying to fetch /data1/nicole/models/sd-vae-ft-ema: Error no file named diffusion_pytorch_model.safetensors found in directory /data1/nicole/models/sd-vae-ft-ema.
+Defaulting to unsafe serialization. Pass `allow_pickle=False` to raise an error instead.
+[[34m2026-07-03 15:37:08[0m] CPFlow parameters: 163,462,369
+[[34m2026-07-03 15:37:08[0m] Beginning epoch 0...
+[rank0]:[W703 15:37:10.763177451 reducer.cpp:1400] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank1]:[W703 15:37:10.066720191 reducer.cpp:1400] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[[34m2026-07-03 15:37:22[0m] (step=0000020) loss=2.2514 img=1.8715 rna=0.2097 align=1.4828 corr=0.0012 steps/s=1.49
+[[34m2026-07-03 15:37:33[0m] (step=0000040) loss=1.7160 img=1.4907 rna=0.1971 align=0.1753 corr=0.0011 steps/s=1.72
+[[34m2026-07-03 15:37:45[0m] (step=0000060) loss=1.6344 img=1.4234 rna=0.1975 align=0.1141 corr=0.0011 steps/s=1.71
+[[34m2026-07-03 15:37:57[0m] (step=0000080) loss=1.5276 img=1.3328 rna=0.1788 align=0.0936 corr=0.0011 steps/s=1.70
+[[34m2026-07-03 15:38:09[0m] (step=0000100) loss=1.3718 img=1.1866 rna=0.1782 align=0.0873 corr=0.0010 steps/s=1.70
+[[34m2026-07-03 15:38:20[0m] (step=0000120) loss=1.2011 img=1.0233 rna=0.1587 align=0.0721 corr=0.0009 steps/s=1.70
+[[34m2026-07-03 15:38:52[0m] [epoch 0] refreshed last.pt @ step 134
+[[34m2026-07-03 15:38:52[0m] Beginning epoch 1...
+[[34m2026-07-03 15:38:56[0m] (step=0000140) loss=1.1453 img=0.9618 rna=0.1786 align=0.0676 corr=0.0012 steps/s=0.56
+[[34m2026-07-03 15:39:07[0m] (step=0000160) loss=1.1265 img=0.9515 rna=0.1628 align=0.0647 corr=0.0010 steps/s=1.71
+[[34m2026-07-03 15:39:19[0m] (step=0000180) loss=1.1214 img=0.9601 rna=0.1573 align=0.0676 corr=0.0009 steps/s=1.71
+[[34m2026-07-03 15:39:31[0m] (step=0000200) loss=1.0912 img=0.9440 rna=0.1496 align=0.0474 corr=0.0008 steps/s=1.70
+[[34m2026-07-03 15:39:43[0m] (step=0000220) loss=1.0490 img=0.9057 rna=0.1428 align=0.0460 corr=0.0009 steps/s=1.70
+[[34m2026-07-03 15:39:54[0m] (step=0000240) loss=1.0684 img=0.8989 rna=0.1579 align=0.0493 corr=0.0009 steps/s=1.70
+[[34m2026-07-03 15:40:06[0m] (step=0000260) loss=1.0058 img=0.8442 rna=0.1413 align=0.0453 corr=0.0009 steps/s=1.70
+[[34m2026-07-03 15:40:35[0m] [epoch 1] refreshed last.pt @ step 268
+[[34m2026-07-03 15:40:35[0m] Beginning epoch 2...
+[[34m2026-07-03 15:40:43[0m] (step=0000280) loss=1.0352 img=0.8988 rna=0.1444 align=0.0502 corr=0.0008 steps/s=0.55
+[[34m2026-07-03 15:40:55[0m] (step=0000300) loss=1.0246 img=0.8926 rna=0.1484 align=0.0354 corr=0.0007 steps/s=1.71
+[[34m2026-07-03 15:41:06[0m] (step=0000320) loss=0.9923 img=0.8409 rna=0.1360 align=0.0294 corr=0.0007 steps/s=1.70
+[[34m2026-07-03 15:41:18[0m] (step=0000340) loss=1.0109 img=0.8661 rna=0.1408 align=0.0356 corr=0.0008 steps/s=1.70
+[[34m2026-07-03 15:41:30[0m] (step=0000360) loss=0.9792 img=0.8310 rna=0.1377 align=0.0316 corr=0.0010 steps/s=1.70
+[[34m2026-07-03 15:41:42[0m] (step=0000380) loss=0.9567 img=0.8246 rna=0.1377 align=0.0273 corr=0.0007 steps/s=1.70
+[[34m2026-07-03 15:41:53[0m] (step=0000400) loss=0.9464 img=0.7893 rna=0.1372 align=0.0346 corr=0.0009 steps/s=1.70
+[[34m2026-07-03 15:42:18[0m] [epoch 2] refreshed last.pt @ step 402
+[[34m2026-07-03 15:42:18[0m] Beginning epoch 3...
+[[34m2026-07-03 15:42:30[0m] (step=0000420) loss=0.9403 img=0.7958 rna=0.1306 align=0.0283 corr=0.0008 steps/s=0.55
+[[34m2026-07-03 15:42:41[0m] (step=0000440) loss=0.9362 img=0.8111 rna=0.1286 align=0.0232 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:42:53[0m] (step=0000460) loss=0.9403 img=0.8039 rna=0.1249 align=0.0238 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:43:05[0m] (step=0000480) loss=0.9397 img=0.8101 rna=0.1274 align=0.0265 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:43:17[0m] (step=0000500) loss=0.9119 img=0.7944 rna=0.1335 align=0.0201 corr=0.0008 steps/s=1.70
+[[34m2026-07-03 15:43:28[0m] (step=0000520) loss=0.9049 img=0.7717 rna=0.1266 align=0.0268 corr=0.0007 steps/s=1.70
+[[34m2026-07-03 15:44:01[0m] [epoch 3] refreshed last.pt @ step 536
+[[34m2026-07-03 15:44:01[0m] Beginning epoch 4...
+[[34m2026-07-03 15:44:04[0m] (step=0000540) loss=0.9048 img=0.7960 rna=0.1274 align=0.0210 corr=0.0006 steps/s=0.55
+[[34m2026-07-03 15:44:16[0m] (step=0000560) loss=0.8949 img=0.7508 rna=0.1217 align=0.0224 corr=0.0007 steps/s=1.71
+[[34m2026-07-03 15:44:28[0m] (step=0000580) loss=0.9158 img=0.7529 rna=0.1252 align=0.0288 corr=0.0007 steps/s=1.70
+[[34m2026-07-03 15:44:40[0m] (step=0000600) loss=0.8870 img=0.7529 rna=0.1235 align=0.0200 corr=0.0008 steps/s=1.70
+[[34m2026-07-03 15:44:51[0m] (step=0000620) loss=0.8853 img=0.7798 rna=0.1214 align=0.0265 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:45:03[0m] (step=0000640) loss=0.8975 img=0.7730 rna=0.1198 align=0.0220 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:45:15[0m] (step=0000660) loss=0.8908 img=0.7761 rna=0.1177 align=0.0249 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:45:44[0m] [epoch 4] refreshed last.pt @ step 670
+[[34m2026-07-03 15:45:44[0m] Beginning epoch 5...
+[[34m2026-07-03 15:45:51[0m] (step=0000680) loss=0.8674 img=0.7386 rna=0.1163 align=0.0238 corr=0.0006 steps/s=0.55
+[[34m2026-07-03 15:46:03[0m] (step=0000700) loss=0.8633 img=0.7431 rna=0.1164 align=0.0224 corr=0.0007 steps/s=1.71
+[[34m2026-07-03 15:46:14[0m] (step=0000720) loss=0.8730 img=0.7514 rna=0.1193 align=0.0318 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:46:26[0m] (step=0000740) loss=0.8788 img=0.7685 rna=0.1192 align=0.0194 corr=0.0007 steps/s=1.70
+[[34m2026-07-03 15:46:38[0m] (step=0000760) loss=0.8615 img=0.7401 rna=0.1156 align=0.0174 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:46:50[0m] (step=0000780) loss=0.8782 img=0.7598 rna=0.1189 align=0.0277 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:47:01[0m] (step=0000800) loss=0.8747 img=0.7398 rna=0.1136 align=0.0202 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:47:28[0m] [epoch 5] refreshed last.pt @ step 804
+[[34m2026-07-03 15:47:28[0m] Beginning epoch 6...
+[[34m2026-07-03 15:47:38[0m] (step=0000820) loss=0.8728 img=0.7557 rna=0.1149 align=0.0214 corr=0.0006 steps/s=0.54
+[[34m2026-07-03 15:47:50[0m] (step=0000840) loss=0.8612 img=0.7564 rna=0.1160 align=0.0187 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 15:48:02[0m] (step=0000860) loss=0.8353 img=0.7152 rna=0.1122 align=0.0242 corr=0.0007 steps/s=1.70
+[[34m2026-07-03 15:48:13[0m] (step=0000880) loss=0.8611 img=0.7476 rna=0.1150 align=0.0182 corr=0.0008 steps/s=1.70
+[[34m2026-07-03 15:48:25[0m] (step=0000900) loss=0.8439 img=0.7328 rna=0.1090 align=0.0240 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:48:37[0m] (step=0000920) loss=0.8402 img=0.7299 rna=0.1126 align=0.0155 corr=0.0008 steps/s=1.70
+[[34m2026-07-03 15:49:11[0m] [epoch 6] refreshed last.pt @ step 938
+[[34m2026-07-03 15:49:11[0m] Beginning epoch 7...
+[[34m2026-07-03 15:49:13[0m] (step=0000940) loss=0.8463 img=0.7427 rna=0.1108 align=0.0184 corr=0.0006 steps/s=0.55
+[[34m2026-07-03 15:49:25[0m] (step=0000960) loss=0.8429 img=0.7165 rna=0.1109 align=0.0207 corr=0.0007 steps/s=1.71
+[[34m2026-07-03 15:49:36[0m] (step=0000980) loss=0.8404 img=0.7251 rna=0.1107 align=0.0199 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 15:49:48[0m] (step=0001000) loss=0.8401 img=0.7423 rna=0.1093 align=0.0234 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:50:24[0m] Saved checkpoint to results_combined/000-CPFlow-B-2-noise/checkpoints/0001000.pt (+ last.pt)
+[[34m2026-07-03 15:50:36[0m] (step=0001020) loss=0.8572 img=0.7378 rna=0.1080 align=0.0168 corr=0.0006 steps/s=0.42
+[[34m2026-07-03 15:50:47[0m] (step=0001040) loss=0.8285 img=0.7042 rna=0.1099 align=0.0136 corr=0.0007 steps/s=1.71
+[[34m2026-07-03 15:50:59[0m] (step=0001060) loss=0.8318 img=0.7276 rna=0.1072 align=0.0216 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 15:51:30[0m] [epoch 7] refreshed last.pt @ step 1072
+[[34m2026-07-03 15:51:30[0m] Beginning epoch 8...
+[[34m2026-07-03 15:51:40[0m] (step=0001080) loss=0.8432 img=0.7337 rna=0.1098 align=0.0196 corr=0.0007 steps/s=0.49
+[[34m2026-07-03 15:51:52[0m] (step=0001100) loss=0.8328 img=0.7195 rna=0.1080 align=0.0179 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 15:52:04[0m] (step=0001120) loss=0.8341 img=0.7226 rna=0.1097 align=0.0196 corr=0.0008 steps/s=1.71
+[[34m2026-07-03 15:52:15[0m] (step=0001140) loss=0.8512 img=0.7429 rna=0.1074 align=0.0143 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 15:52:27[0m] (step=0001160) loss=0.8331 img=0.7207 rna=0.1068 align=0.0127 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:52:39[0m] (step=0001180) loss=0.8211 img=0.7008 rna=0.1073 align=0.0172 corr=0.0007 steps/s=1.70
+[[34m2026-07-03 15:52:51[0m] (step=0001200) loss=0.8178 img=0.7271 rna=0.1046 align=0.0178 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:53:18[0m] [epoch 8] refreshed last.pt @ step 1206
+[[34m2026-07-03 15:53:18[0m] Beginning epoch 9...
+[[34m2026-07-03 15:53:27[0m] (step=0001220) loss=0.8156 img=0.7032 rna=0.1049 align=0.0193 corr=0.0006 steps/s=0.55
+[[34m2026-07-03 15:53:38[0m] (step=0001240) loss=0.8304 img=0.7175 rna=0.1083 align=0.0174 corr=0.0007 steps/s=1.71
+[[34m2026-07-03 15:53:50[0m] (step=0001260) loss=0.8267 img=0.7143 rna=0.1003 align=0.0177 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 15:54:02[0m] (step=0001280) loss=0.8296 img=0.7235 rna=0.1039 align=0.0207 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:54:14[0m] (step=0001300) loss=0.8147 img=0.7182 rna=0.1014 align=0.0164 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:54:25[0m] (step=0001320) loss=0.8125 img=0.6899 rna=0.1043 align=0.0190 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 15:54:37[0m] (step=0001340) loss=0.8226 img=0.7246 rna=0.1009 align=0.0136 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 15:55:01[0m] [epoch 9] refreshed last.pt @ step 1340
+[[34m2026-07-03 15:55:01[0m] Beginning epoch 10...
+[[34m2026-07-03 15:55:13[0m] (step=0001360) loss=0.8147 img=0.6895 rna=0.0977 align=0.0119 corr=0.0006 steps/s=0.55
+[[34m2026-07-03 15:55:25[0m] (step=0001380) loss=0.8096 img=0.7042 rna=0.1023 align=0.0147 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 15:55:37[0m] (step=0001400) loss=0.8228 img=0.7253 rna=0.1002 align=0.0124 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:55:48[0m] (step=0001420) loss=0.8059 img=0.7225 rna=0.1011 align=0.0127 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:56:00[0m] (step=0001440) loss=0.8199 img=0.7198 rna=0.1072 align=0.0112 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:56:12[0m] (step=0001460) loss=0.8170 img=0.7093 rna=0.1025 align=0.0179 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:56:44[0m] [epoch 10] refreshed last.pt @ step 1474
+[[34m2026-07-03 15:56:44[0m] Beginning epoch 11...
+[[34m2026-07-03 15:56:48[0m] (step=0001480) loss=0.8154 img=0.7119 rna=0.1003 align=0.0128 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 15:57:00[0m] (step=0001500) loss=0.8038 img=0.6897 rna=0.0984 align=0.0140 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 15:57:12[0m] (step=0001520) loss=0.8025 img=0.6990 rna=0.1039 align=0.0129 corr=0.0007 steps/s=1.70
+[[34m2026-07-03 15:57:24[0m] (step=0001540) loss=0.8027 img=0.7028 rna=0.1006 align=0.0186 corr=0.0007 steps/s=1.70
+[[34m2026-07-03 15:57:35[0m] (step=0001560) loss=0.8121 img=0.7119 rna=0.0944 align=0.0161 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 15:57:47[0m] (step=0001580) loss=0.8176 img=0.7270 rna=0.1022 align=0.0118 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 15:57:59[0m] (step=0001600) loss=0.8022 img=0.6973 rna=0.1016 align=0.0172 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 15:58:28[0m] [epoch 11] refreshed last.pt @ step 1608
+[[34m2026-07-03 15:58:28[0m] Beginning epoch 12...
+[[34m2026-07-03 15:58:36[0m] (step=0001620) loss=0.8044 img=0.7059 rna=0.0960 align=0.0150 corr=0.0006 steps/s=0.54
+[[34m2026-07-03 15:58:47[0m] (step=0001640) loss=0.8241 img=0.7167 rna=0.1014 align=0.0113 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 15:58:59[0m] (step=0001660) loss=0.7937 img=0.6976 rna=0.0951 align=0.0109 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 15:59:11[0m] (step=0001680) loss=0.7974 img=0.7085 rna=0.0970 align=0.0155 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 15:59:23[0m] (step=0001700) loss=0.7942 img=0.6946 rna=0.0942 align=0.0132 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 15:59:34[0m] (step=0001720) loss=0.8187 img=0.7222 rna=0.0942 align=0.0124 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 15:59:46[0m] (step=0001740) loss=0.8025 img=0.7075 rna=0.0986 align=0.0112 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 16:00:11[0m] [epoch 12] refreshed last.pt @ step 1742
+[[34m2026-07-03 16:00:11[0m] Beginning epoch 13...
+[[34m2026-07-03 16:00:22[0m] (step=0001760) loss=0.7938 img=0.7224 rna=0.0934 align=0.0139 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 16:00:34[0m] (step=0001780) loss=0.8028 img=0.6987 rna=0.0985 align=0.0113 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 16:00:46[0m] (step=0001800) loss=0.7954 img=0.6830 rna=0.0940 align=0.0122 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:00:57[0m] (step=0001820) loss=0.8049 img=0.7074 rna=0.0960 align=0.0127 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 16:01:09[0m] (step=0001840) loss=0.7949 img=0.6942 rna=0.0964 align=0.0140 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 16:01:21[0m] (step=0001860) loss=0.7975 img=0.6974 rna=0.0936 align=0.0113 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:01:54[0m] [epoch 13] refreshed last.pt @ step 1876
+[[34m2026-07-03 16:01:54[0m] Beginning epoch 14...
+[[34m2026-07-03 16:01:57[0m] (step=0001880) loss=0.7975 img=0.7039 rna=0.0973 align=0.0097 corr=0.0007 steps/s=0.55
+[[34m2026-07-03 16:02:09[0m] (step=0001900) loss=0.7790 img=0.7028 rna=0.0924 align=0.0105 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 16:02:20[0m] (step=0001920) loss=0.7977 img=0.7009 rna=0.0929 align=0.0105 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 16:02:32[0m] (step=0001940) loss=0.8011 img=0.7088 rna=0.0920 align=0.0101 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:02:44[0m] (step=0001960) loss=0.7839 img=0.6774 rna=0.0934 align=0.0095 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:02:56[0m] (step=0001980) loss=0.7810 img=0.6888 rna=0.0957 align=0.0127 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:03:07[0m] (step=0002000) loss=0.7875 img=0.7014 rna=0.0945 align=0.0107 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 16:03:43[0m] Saved checkpoint to results_combined/000-CPFlow-B-2-noise/checkpoints/0002000.pt (+ last.pt)
+[[34m2026-07-03 16:04:12[0m] [epoch 14] refreshed last.pt @ step 2010
+[[34m2026-07-03 16:04:12[0m] Beginning epoch 15...
+[[34m2026-07-03 16:04:19[0m] (step=0002020) loss=0.7929 img=0.6940 rna=0.0958 align=0.0162 corr=0.0007 steps/s=0.28
+[[34m2026-07-03 16:04:31[0m] (step=0002040) loss=0.8075 img=0.7078 rna=0.0984 align=0.0127 corr=0.0006 steps/s=1.72
+[[34m2026-07-03 16:04:42[0m] (step=0002060) loss=0.8011 img=0.6874 rna=0.0932 align=0.0111 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:04:54[0m] (step=0002080) loss=0.7994 img=0.7018 rna=0.0963 align=0.0101 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:05:06[0m] (step=0002100) loss=0.7946 img=0.6879 rna=0.0945 align=0.0114 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 16:05:17[0m] (step=0002120) loss=0.7744 img=0.6734 rna=0.0938 align=0.0111 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 16:05:29[0m] (step=0002140) loss=0.7819 img=0.6835 rna=0.0949 align=0.0161 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:05:55[0m] [epoch 15] refreshed last.pt @ step 2144
+[[34m2026-07-03 16:05:55[0m] Beginning epoch 16...
+[[34m2026-07-03 16:06:05[0m] (step=0002160) loss=0.8054 img=0.6997 rna=0.0891 align=0.0113 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 16:06:17[0m] (step=0002180) loss=0.7623 img=0.6778 rna=0.0882 align=0.0143 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:06:29[0m] (step=0002200) loss=0.7852 img=0.6989 rna=0.0891 align=0.0113 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:06:40[0m] (step=0002220) loss=0.7846 img=0.6861 rna=0.0886 align=0.0096 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:06:52[0m] (step=0002240) loss=0.7917 img=0.7072 rna=0.0934 align=0.0115 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 16:07:04[0m] (step=0002260) loss=0.7917 img=0.6924 rna=0.0880 align=0.0097 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:07:38[0m] [epoch 16] refreshed last.pt @ step 2278
+[[34m2026-07-03 16:07:38[0m] Beginning epoch 17...
+[[34m2026-07-03 16:07:40[0m] (step=0002280) loss=0.7779 img=0.6688 rna=0.0896 align=0.0126 corr=0.0006 steps/s=0.55
+[[34m2026-07-03 16:07:52[0m] (step=0002300) loss=0.7732 img=0.6814 rna=0.0909 align=0.0147 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:08:04[0m] (step=0002320) loss=0.7959 img=0.7062 rna=0.0952 align=0.0118 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 16:08:15[0m] (step=0002340) loss=0.7646 img=0.6674 rna=0.0878 align=0.0121 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 16:08:27[0m] (step=0002360) loss=0.7803 img=0.7117 rna=0.0848 align=0.0115 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:08:39[0m] (step=0002380) loss=0.7840 img=0.6856 rna=0.0930 align=0.0092 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 16:08:51[0m] (step=0002400) loss=0.7866 img=0.6915 rna=0.0860 align=0.0114 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:09:22[0m] [epoch 17] refreshed last.pt @ step 2412
+[[34m2026-07-03 16:09:22[0m] Beginning epoch 18...
+[[34m2026-07-03 16:09:27[0m] (step=0002420) loss=0.7834 img=0.6913 rna=0.0941 align=0.0098 corr=0.0006 steps/s=0.54
+[[34m2026-07-03 16:09:39[0m] (step=0002440) loss=0.7798 img=0.6947 rna=0.0910 align=0.0091 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:09:51[0m] (step=0002460) loss=0.7843 img=0.6903 rna=0.0879 align=0.0122 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:10:03[0m] (step=0002480) loss=0.7709 img=0.6917 rna=0.0880 align=0.0119 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 16:10:14[0m] (step=0002500) loss=0.7825 img=0.6819 rna=0.0881 align=0.0124 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:10:26[0m] (step=0002520) loss=0.7781 img=0.6900 rna=0.0946 align=0.0128 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 16:10:38[0m] (step=0002540) loss=0.7780 img=0.6895 rna=0.0879 align=0.0100 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:11:06[0m] [epoch 18] refreshed last.pt @ step 2546
+[[34m2026-07-03 16:11:06[0m] Beginning epoch 19...
+[[34m2026-07-03 16:11:15[0m] (step=0002560) loss=0.7735 img=0.6931 rna=0.0870 align=0.0117 corr=0.0005 steps/s=0.53
+[[34m2026-07-03 16:11:27[0m] (step=0002580) loss=0.7934 img=0.7121 rna=0.0854 align=0.0095 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 16:11:39[0m] (step=0002600) loss=0.7893 img=0.6994 rna=0.0896 align=0.0107 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:11:51[0m] (step=0002620) loss=0.7802 img=0.6896 rna=0.0833 align=0.0100 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:12:02[0m] (step=0002640) loss=0.7714 img=0.6781 rna=0.0907 align=0.0088 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:12:14[0m] (step=0002660) loss=0.7688 img=0.6875 rna=0.0834 align=0.0107 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:12:26[0m] (step=0002680) loss=0.7691 img=0.6650 rna=0.0927 align=0.0125 corr=0.0007 steps/s=1.70
+[[34m2026-07-03 16:12:51[0m] [epoch 19] refreshed last.pt @ step 2680
+[[34m2026-07-03 16:12:51[0m] Beginning epoch 20...
+[[34m2026-07-03 16:13:03[0m] (step=0002700) loss=0.7724 img=0.6797 rna=0.0893 align=0.0108 corr=0.0005 steps/s=0.53
+[[34m2026-07-03 16:13:15[0m] (step=0002720) loss=0.7795 img=0.6838 rna=0.0833 align=0.0089 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 16:13:27[0m] (step=0002740) loss=0.7737 img=0.6795 rna=0.0869 align=0.0104 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:13:39[0m] (step=0002760) loss=0.7757 img=0.6865 rna=0.0882 align=0.0103 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:13:50[0m] (step=0002780) loss=0.7787 img=0.6886 rna=0.0879 align=0.0087 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 16:14:02[0m] (step=0002800) loss=0.7816 img=0.7021 rna=0.0875 align=0.0088 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:14:35[0m] [epoch 20] refreshed last.pt @ step 2814
+[[34m2026-07-03 16:14:35[0m] Beginning epoch 21...
+[[34m2026-07-03 16:14:39[0m] (step=0002820) loss=0.7692 img=0.6887 rna=0.0861 align=0.0074 corr=0.0005 steps/s=0.54
+[[34m2026-07-03 16:14:51[0m] (step=0002840) loss=0.7637 img=0.6733 rna=0.0888 align=0.0083 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:15:03[0m] (step=0002860) loss=0.7855 img=0.6846 rna=0.0857 align=0.0086 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:15:14[0m] (step=0002880) loss=0.7808 img=0.6787 rna=0.0875 align=0.0098 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:15:26[0m] (step=0002900) loss=0.7529 img=0.6672 rna=0.0835 align=0.0065 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:15:38[0m] (step=0002920) loss=0.7673 img=0.6734 rna=0.0875 align=0.0077 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:15:50[0m] (step=0002940) loss=0.7713 img=0.6966 rna=0.0834 align=0.0081 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:16:18[0m] [epoch 21] refreshed last.pt @ step 2948
+[[34m2026-07-03 16:16:18[0m] Beginning epoch 22...
+[[34m2026-07-03 16:16:26[0m] (step=0002960) loss=0.7834 img=0.7050 rna=0.0844 align=0.0108 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 16:16:38[0m] (step=0002980) loss=0.7648 img=0.6763 rna=0.0825 align=0.0104 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:16:49[0m] (step=0003000) loss=0.7910 img=0.6989 rna=0.0862 align=0.0129 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:17:25[0m] Saved checkpoint to results_combined/000-CPFlow-B-2-noise/checkpoints/0003000.pt (+ last.pt)
+[[34m2026-07-03 16:17:36[0m] (step=0003020) loss=0.7604 img=0.6643 rna=0.0842 align=0.0084 corr=0.0006 steps/s=0.43
+[[34m2026-07-03 16:17:48[0m] (step=0003040) loss=0.7671 img=0.6952 rna=0.0871 align=0.0141 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:18:00[0m] (step=0003060) loss=0.7689 img=0.6698 rna=0.0861 align=0.0130 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:18:11[0m] (step=0003080) loss=0.7547 img=0.6703 rna=0.0856 align=0.0107 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 16:18:36[0m] [epoch 22] refreshed last.pt @ step 3082
+[[34m2026-07-03 16:18:36[0m] Beginning epoch 23...
+[[34m2026-07-03 16:18:48[0m] (step=0003100) loss=0.7807 img=0.6844 rna=0.0820 align=0.0077 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 16:18:59[0m] (step=0003120) loss=0.7706 img=0.6955 rna=0.0845 align=0.0092 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 16:19:11[0m] (step=0003140) loss=0.7602 img=0.6872 rna=0.0847 align=0.0149 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:19:23[0m] (step=0003160) loss=0.7724 img=0.6778 rna=0.0848 align=0.0098 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 16:19:35[0m] (step=0003180) loss=0.7754 img=0.6853 rna=0.0894 align=0.0085 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:19:46[0m] (step=0003200) loss=0.7697 img=0.6848 rna=0.0828 align=0.0090 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:20:19[0m] [epoch 23] refreshed last.pt @ step 3216
+[[34m2026-07-03 16:20:19[0m] Beginning epoch 24...
+[[34m2026-07-03 16:20:22[0m] (step=0003220) loss=0.7596 img=0.6648 rna=0.0879 align=0.0075 corr=0.0006 steps/s=0.56
+[[34m2026-07-03 16:20:34[0m] (step=0003240) loss=0.7759 img=0.6970 rna=0.0858 align=0.0082 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 16:20:46[0m] (step=0003260) loss=0.7699 img=0.6800 rna=0.0864 align=0.0103 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 16:20:57[0m] (step=0003280) loss=0.7730 img=0.6971 rna=0.0855 align=0.0089 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:21:09[0m] (step=0003300) loss=0.7398 img=0.6599 rna=0.0808 align=0.0087 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:21:21[0m] (step=0003320) loss=0.7785 img=0.7003 rna=0.0853 align=0.0077 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:21:33[0m] (step=0003340) loss=0.7617 img=0.6715 rna=0.0868 align=0.0071 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:22:02[0m] [epoch 24] refreshed last.pt @ step 3350
+[[34m2026-07-03 16:22:02[0m] Beginning epoch 25...
+[[34m2026-07-03 16:22:09[0m] (step=0003360) loss=0.7681 img=0.6930 rna=0.0832 align=0.0082 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 16:22:20[0m] (step=0003380) loss=0.7673 img=0.6900 rna=0.0864 align=0.0091 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 16:22:32[0m] (step=0003400) loss=0.7740 img=0.6927 rna=0.0880 align=0.0086 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 16:22:44[0m] (step=0003420) loss=0.7825 img=0.6888 rna=0.0877 align=0.0089 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:22:56[0m] (step=0003440) loss=0.7501 img=0.6681 rna=0.0848 align=0.0086 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 16:23:07[0m] (step=0003460) loss=0.7650 img=0.6788 rna=0.0836 align=0.0069 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:23:19[0m] (step=0003480) loss=0.7532 img=0.6682 rna=0.0827 align=0.0085 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:23:45[0m] [epoch 25] refreshed last.pt @ step 3484
+[[34m2026-07-03 16:23:45[0m] Beginning epoch 26...
+[[34m2026-07-03 16:23:55[0m] (step=0003500) loss=0.7539 img=0.6697 rna=0.0801 align=0.0100 corr=0.0004 steps/s=0.55
+[[34m2026-07-03 16:24:07[0m] (step=0003520) loss=0.7675 img=0.6761 rna=0.0844 align=0.0064 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:24:19[0m] (step=0003540) loss=0.7727 img=0.6929 rna=0.0846 align=0.0074 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:24:30[0m] (step=0003560) loss=0.7520 img=0.6678 rna=0.0822 align=0.0078 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:24:42[0m] (step=0003580) loss=0.7768 img=0.6895 rna=0.0836 align=0.0080 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:24:54[0m] (step=0003600) loss=0.7555 img=0.6622 rna=0.0815 align=0.0099 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:25:28[0m] [epoch 26] refreshed last.pt @ step 3618
+[[34m2026-07-03 16:25:28[0m] Beginning epoch 27...
+[[34m2026-07-03 16:25:30[0m] (step=0003620) loss=0.7573 img=0.6716 rna=0.0809 align=0.0120 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 16:25:42[0m] (step=0003640) loss=0.7537 img=0.6794 rna=0.0790 align=0.0072 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:25:54[0m] (step=0003660) loss=0.7692 img=0.6881 rna=0.0844 align=0.0066 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:26:05[0m] (step=0003680) loss=0.7621 img=0.6730 rna=0.0829 align=0.0085 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:26:17[0m] (step=0003700) loss=0.7657 img=0.6860 rna=0.0846 align=0.0074 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:26:29[0m] (step=0003720) loss=0.7523 img=0.6660 rna=0.0829 align=0.0105 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:26:41[0m] (step=0003740) loss=0.7626 img=0.6684 rna=0.0800 align=0.0061 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:27:11[0m] [epoch 27] refreshed last.pt @ step 3752
+[[34m2026-07-03 16:27:11[0m] Beginning epoch 28...
+[[34m2026-07-03 16:27:17[0m] (step=0003760) loss=0.7582 img=0.6752 rna=0.0829 align=0.0071 corr=0.0005 steps/s=0.56
+[[34m2026-07-03 16:27:28[0m] (step=0003780) loss=0.7612 img=0.6675 rna=0.0824 align=0.0086 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:27:40[0m] (step=0003800) loss=0.7720 img=0.7007 rna=0.0849 align=0.0085 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 16:27:52[0m] (step=0003820) loss=0.7743 img=0.6923 rna=0.0819 align=0.0101 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:28:04[0m] (step=0003840) loss=0.7543 img=0.6837 rna=0.0813 align=0.0102 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:28:16[0m] (step=0003860) loss=0.7568 img=0.6911 rna=0.0814 align=0.0092 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:28:27[0m] (step=0003880) loss=0.7578 img=0.6751 rna=0.0830 align=0.0069 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:28:54[0m] [epoch 28] refreshed last.pt @ step 3886
+[[34m2026-07-03 16:28:54[0m] Beginning epoch 29...
+[[34m2026-07-03 16:29:03[0m] (step=0003900) loss=0.7587 img=0.6683 rna=0.0831 align=0.0093 corr=0.0005 steps/s=0.56
+[[34m2026-07-03 16:29:15[0m] (step=0003920) loss=0.7586 img=0.6831 rna=0.0800 align=0.0068 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:29:27[0m] (step=0003940) loss=0.7773 img=0.6938 rna=0.0851 align=0.0119 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:29:38[0m] (step=0003960) loss=0.7560 img=0.6783 rna=0.0802 align=0.0091 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:29:50[0m] (step=0003980) loss=0.7601 img=0.6793 rna=0.0782 align=0.0073 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:30:02[0m] (step=0004000) loss=0.7549 img=0.6674 rna=0.0847 align=0.0106 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:30:37[0m] Saved checkpoint to results_combined/000-CPFlow-B-2-noise/checkpoints/0004000.pt (+ last.pt)
+[[34m2026-07-03 16:30:49[0m] (step=0004020) loss=0.7659 img=0.6815 rna=0.0819 align=0.0080 corr=0.0004 steps/s=0.43
+[[34m2026-07-03 16:31:13[0m] [epoch 29] refreshed last.pt @ step 4020
+[[34m2026-07-03 16:31:13[0m] Beginning epoch 30...
+[[34m2026-07-03 16:31:25[0m] (step=0004040) loss=0.7544 img=0.6616 rna=0.0828 align=0.0061 corr=0.0006 steps/s=0.55
+[[34m2026-07-03 16:31:37[0m] (step=0004060) loss=0.7494 img=0.6804 rna=0.0803 align=0.0061 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:31:49[0m] (step=0004080) loss=0.7579 img=0.6701 rna=0.0815 align=0.0081 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:32:01[0m] (step=0004100) loss=0.7625 img=0.6811 rna=0.0823 align=0.0075 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:32:12[0m] (step=0004120) loss=0.7649 img=0.6969 rna=0.0795 align=0.0091 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:32:24[0m] (step=0004140) loss=0.7610 img=0.6854 rna=0.0809 align=0.0078 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:32:56[0m] [epoch 30] refreshed last.pt @ step 4154
+[[34m2026-07-03 16:32:56[0m] Beginning epoch 31...
+[[34m2026-07-03 16:33:00[0m] (step=0004160) loss=0.7623 img=0.6768 rna=0.0821 align=0.0085 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 16:33:12[0m] (step=0004180) loss=0.7481 img=0.6664 rna=0.0787 align=0.0064 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 16:33:24[0m] (step=0004200) loss=0.7584 img=0.6793 rna=0.0799 align=0.0067 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:33:35[0m] (step=0004220) loss=0.7666 img=0.6855 rna=0.0794 align=0.0095 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:33:47[0m] (step=0004240) loss=0.7474 img=0.6679 rna=0.0782 align=0.0145 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:33:59[0m] (step=0004260) loss=0.7651 img=0.6725 rna=0.0800 align=0.0100 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:34:11[0m] (step=0004280) loss=0.7407 img=0.6603 rna=0.0818 align=0.0075 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:34:39[0m] [epoch 31] refreshed last.pt @ step 4288
+[[34m2026-07-03 16:34:39[0m] Beginning epoch 32...
+[[34m2026-07-03 16:34:47[0m] (step=0004300) loss=0.7439 img=0.6574 rna=0.0763 align=0.0067 corr=0.0004 steps/s=0.56
+[[34m2026-07-03 16:34:58[0m] (step=0004320) loss=0.7508 img=0.6806 rna=0.0802 align=0.0090 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 16:35:10[0m] (step=0004340) loss=0.7551 img=0.6800 rna=0.0807 align=0.0076 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:35:22[0m] (step=0004360) loss=0.7669 img=0.6736 rna=0.0815 align=0.0061 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:35:33[0m] (step=0004380) loss=0.7579 img=0.6816 rna=0.0793 align=0.0061 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:35:45[0m] (step=0004400) loss=0.7502 img=0.6613 rna=0.0826 align=0.0065 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 16:35:57[0m] (step=0004420) loss=0.7532 img=0.6663 rna=0.0834 align=0.0073 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:36:22[0m] [epoch 32] refreshed last.pt @ step 4422
+[[34m2026-07-03 16:36:22[0m] Beginning epoch 33...
+[[34m2026-07-03 16:36:33[0m] (step=0004440) loss=0.7568 img=0.6593 rna=0.0789 align=0.0077 corr=0.0005 steps/s=0.56
+[[34m2026-07-03 16:36:44[0m] (step=0004460) loss=0.7610 img=0.6827 rna=0.0812 align=0.0057 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:36:56[0m] (step=0004480) loss=0.7411 img=0.6678 rna=0.0791 align=0.0074 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:37:08[0m] (step=0004500) loss=0.7514 img=0.6590 rna=0.0771 align=0.0069 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:37:20[0m] (step=0004520) loss=0.7620 img=0.6686 rna=0.0849 align=0.0073 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 16:37:31[0m] (step=0004540) loss=0.7629 img=0.6840 rna=0.0816 align=0.0067 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:38:05[0m] [epoch 33] refreshed last.pt @ step 4556
+[[34m2026-07-03 16:38:05[0m] Beginning epoch 34...
+[[34m2026-07-03 16:38:08[0m] (step=0004560) loss=0.7544 img=0.6778 rna=0.0853 align=0.0066 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 16:38:19[0m] (step=0004580) loss=0.7474 img=0.6579 rna=0.0765 align=0.0112 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:38:31[0m] (step=0004600) loss=0.7500 img=0.6686 rna=0.0761 align=0.0065 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:38:43[0m] (step=0004620) loss=0.7506 img=0.6547 rna=0.0815 align=0.0067 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:38:55[0m] (step=0004640) loss=0.7376 img=0.6521 rna=0.0793 align=0.0077 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:39:06[0m] (step=0004660) loss=0.7547 img=0.6830 rna=0.0759 align=0.0061 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:39:18[0m] (step=0004680) loss=0.7606 img=0.6923 rna=0.0785 align=0.0055 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:39:48[0m] [epoch 34] refreshed last.pt @ step 4690
+[[34m2026-07-03 16:39:48[0m] Beginning epoch 35...
+[[34m2026-07-03 16:39:55[0m] (step=0004700) loss=0.7431 img=0.6720 rna=0.0780 align=0.0044 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 16:40:06[0m] (step=0004720) loss=0.7567 img=0.6984 rna=0.0794 align=0.0059 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 16:40:18[0m] (step=0004740) loss=0.7651 img=0.6721 rna=0.0762 align=0.0069 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:40:30[0m] (step=0004760) loss=0.7586 img=0.6653 rna=0.0802 align=0.0070 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 16:40:41[0m] (step=0004780) loss=0.7408 img=0.6671 rna=0.0794 align=0.0070 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:40:53[0m] (step=0004800) loss=0.7456 img=0.6729 rna=0.0752 align=0.0077 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:41:05[0m] (step=0004820) loss=0.7596 img=0.6776 rna=0.0805 align=0.0056 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:41:31[0m] [epoch 35] refreshed last.pt @ step 4824
+[[34m2026-07-03 16:41:31[0m] Beginning epoch 36...
+[[34m2026-07-03 16:41:41[0m] (step=0004840) loss=0.7443 img=0.6650 rna=0.0798 align=0.0056 corr=0.0005 steps/s=0.56
+[[34m2026-07-03 16:41:53[0m] (step=0004860) loss=0.7327 img=0.6516 rna=0.0790 align=0.0064 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:42:04[0m] (step=0004880) loss=0.7570 img=0.6671 rna=0.0772 align=0.0063 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:42:16[0m] (step=0004900) loss=0.7333 img=0.6675 rna=0.0789 align=0.0094 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:42:28[0m] (step=0004920) loss=0.7555 img=0.6764 rna=0.0756 align=0.0077 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:42:40[0m] (step=0004940) loss=0.7458 img=0.6612 rna=0.0793 align=0.0050 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:43:14[0m] [epoch 36] refreshed last.pt @ step 4958
+[[34m2026-07-03 16:43:14[0m] Beginning epoch 37...
+[[34m2026-07-03 16:43:16[0m] (step=0004960) loss=0.7385 img=0.6640 rna=0.0770 align=0.0079 corr=0.0004 steps/s=0.55
+[[34m2026-07-03 16:43:28[0m] (step=0004980) loss=0.7498 img=0.6723 rna=0.0771 align=0.0072 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:43:39[0m] (step=0005000) loss=0.7496 img=0.6809 rna=0.0766 align=0.0067 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 16:44:14[0m] Saved checkpoint to results_combined/000-CPFlow-B-2-noise/checkpoints/0005000.pt (+ last.pt)
+[[34m2026-07-03 16:44:26[0m] (step=0005020) loss=0.7645 img=0.6814 rna=0.0783 align=0.0053 corr=0.0005 steps/s=0.43
+[[34m2026-07-03 16:44:38[0m] (step=0005040) loss=0.7398 img=0.6584 rna=0.0785 align=0.0050 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:44:49[0m] (step=0005060) loss=0.7289 img=0.6336 rna=0.0790 align=0.0052 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:45:01[0m] (step=0005080) loss=0.7318 img=0.6506 rna=0.0767 align=0.0084 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:45:31[0m] [epoch 37] refreshed last.pt @ step 5092
+[[34m2026-07-03 16:45:31[0m] Beginning epoch 38...
+[[34m2026-07-03 16:45:37[0m] (step=0005100) loss=0.7592 img=0.6734 rna=0.0779 align=0.0070 corr=0.0004 steps/s=0.56
+[[34m2026-07-03 16:45:49[0m] (step=0005120) loss=0.7469 img=0.6649 rna=0.0784 align=0.0058 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 16:46:00[0m] (step=0005140) loss=0.7490 img=0.6709 rna=0.0777 align=0.0077 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:46:12[0m] (step=0005160) loss=0.7596 img=0.6721 rna=0.0779 align=0.0064 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 16:46:24[0m] (step=0005180) loss=0.7644 img=0.6734 rna=0.0781 align=0.0073 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:46:36[0m] (step=0005200) loss=0.7459 img=0.6715 rna=0.0763 align=0.0058 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:46:47[0m] (step=0005220) loss=0.7485 img=0.6775 rna=0.0785 align=0.0055 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:47:15[0m] [epoch 38] refreshed last.pt @ step 5226
+[[34m2026-07-03 16:47:15[0m] Beginning epoch 39...
+[[34m2026-07-03 16:47:24[0m] (step=0005240) loss=0.7598 img=0.6719 rna=0.0797 align=0.0069 corr=0.0004 steps/s=0.55
+[[34m2026-07-03 16:47:35[0m] (step=0005260) loss=0.7549 img=0.6694 rna=0.0789 align=0.0072 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:47:47[0m] (step=0005280) loss=0.7406 img=0.6521 rna=0.0757 align=0.0061 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:47:59[0m] (step=0005300) loss=0.7494 img=0.6484 rna=0.0774 align=0.0072 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:48:11[0m] (step=0005320) loss=0.7415 img=0.6697 rna=0.0772 align=0.0074 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:48:22[0m] (step=0005340) loss=0.7454 img=0.6616 rna=0.0719 align=0.0069 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:48:34[0m] (step=0005360) loss=0.7536 img=0.6556 rna=0.0728 align=0.0059 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:48:57[0m] [epoch 39] refreshed last.pt @ step 5360
+[[34m2026-07-03 16:48:57[0m] Beginning epoch 40...
+[[34m2026-07-03 16:49:10[0m] (step=0005380) loss=0.7555 img=0.6792 rna=0.0827 align=0.0077 corr=0.0005 steps/s=0.56
+[[34m2026-07-03 16:49:22[0m] (step=0005400) loss=0.7362 img=0.6652 rna=0.0762 align=0.0057 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:49:33[0m] (step=0005420) loss=0.7377 img=0.6612 rna=0.0758 align=0.0061 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 16:49:45[0m] (step=0005440) loss=0.7422 img=0.6706 rna=0.0765 align=0.0062 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 16:49:57[0m] (step=0005460) loss=0.7355 img=0.6571 rna=0.0783 align=0.0056 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:50:09[0m] (step=0005480) loss=0.7404 img=0.6586 rna=0.0754 align=0.0049 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 16:50:40[0m] [epoch 40] refreshed last.pt @ step 5494
+[[34m2026-07-03 16:50:40[0m] Beginning epoch 41...
+[[34m2026-07-03 16:50:45[0m] (step=0005500) loss=0.7468 img=0.6572 rna=0.0800 align=0.0082 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 16:50:56[0m] (step=0005520) loss=0.7484 img=0.6635 rna=0.0758 align=0.0063 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:51:08[0m] (step=0005540) loss=0.7515 img=0.6725 rna=0.0739 align=0.0078 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 16:51:20[0m] (step=0005560) loss=0.7407 img=0.6792 rna=0.0758 align=0.0061 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 16:51:32[0m] (step=0005580) loss=0.7339 img=0.6577 rna=0.0777 align=0.0062 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 16:51:43[0m] (step=0005600) loss=0.7345 img=0.6682 rna=0.0772 align=0.0062 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:51:55[0m] (step=0005620) loss=0.7528 img=0.6815 rna=0.0782 align=0.0062 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:52:24[0m] [epoch 41] refreshed last.pt @ step 5628
+[[34m2026-07-03 16:52:24[0m] Beginning epoch 42...
+[[34m2026-07-03 16:52:32[0m] (step=0005640) loss=0.7538 img=0.6614 rna=0.0807 align=0.0086 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 16:52:43[0m] (step=0005660) loss=0.7579 img=0.6865 rna=0.0784 align=0.0058 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:52:55[0m] (step=0005680) loss=0.7347 img=0.6627 rna=0.0747 align=0.0058 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:53:07[0m] (step=0005700) loss=0.7380 img=0.6620 rna=0.0779 align=0.0073 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:53:18[0m] (step=0005720) loss=0.7527 img=0.6698 rna=0.0834 align=0.0059 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:53:30[0m] (step=0005740) loss=0.7413 img=0.6631 rna=0.0746 align=0.0087 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:53:42[0m] (step=0005760) loss=0.7515 img=0.6641 rna=0.0793 align=0.0065 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:54:07[0m] [epoch 42] refreshed last.pt @ step 5762
+[[34m2026-07-03 16:54:07[0m] Beginning epoch 43...
+[[34m2026-07-03 16:54:18[0m] (step=0005780) loss=0.7475 img=0.6709 rna=0.0781 align=0.0056 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 16:54:30[0m] (step=0005800) loss=0.7622 img=0.6886 rna=0.0830 align=0.0062 corr=0.0006 steps/s=1.71
+[[34m2026-07-03 16:54:42[0m] (step=0005820) loss=0.7462 img=0.6710 rna=0.0786 align=0.0052 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:54:53[0m] (step=0005840) loss=0.7456 img=0.6616 rna=0.0829 align=0.0082 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 16:55:05[0m] (step=0005860) loss=0.7370 img=0.6603 rna=0.0778 align=0.0052 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:55:17[0m] (step=0005880) loss=0.7430 img=0.6530 rna=0.0764 align=0.0046 corr=0.0006 steps/s=1.68
+[[34m2026-07-03 16:55:50[0m] [epoch 43] refreshed last.pt @ step 5896
+[[34m2026-07-03 16:55:50[0m] Beginning epoch 44...
+[[34m2026-07-03 16:55:53[0m] (step=0005900) loss=0.7403 img=0.6668 rna=0.0776 align=0.0057 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 16:56:05[0m] (step=0005920) loss=0.7372 img=0.6611 rna=0.0753 align=0.0056 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:56:17[0m] (step=0005940) loss=0.7399 img=0.6686 rna=0.0743 align=0.0050 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:56:28[0m] (step=0005960) loss=0.7557 img=0.6812 rna=0.0775 align=0.0046 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:56:40[0m] (step=0005980) loss=0.7351 img=0.6382 rna=0.0732 align=0.0053 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:56:52[0m] (step=0006000) loss=0.7359 img=0.6590 rna=0.0740 align=0.0069 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:57:31[0m] Saved checkpoint to results_combined/000-CPFlow-B-2-noise/checkpoints/0006000.pt (+ last.pt)
+[[34m2026-07-03 16:57:42[0m] (step=0006020) loss=0.7422 img=0.6674 rna=0.0769 align=0.0050 corr=0.0005 steps/s=0.40
+[[34m2026-07-03 16:58:12[0m] [epoch 44] refreshed last.pt @ step 6030
+[[34m2026-07-03 16:58:12[0m] Beginning epoch 45...
+[[34m2026-07-03 16:58:18[0m] (step=0006040) loss=0.7382 img=0.6824 rna=0.0767 align=0.0056 corr=0.0005 steps/s=0.56
+[[34m2026-07-03 16:58:30[0m] (step=0006060) loss=0.7210 img=0.6478 rna=0.0767 align=0.0061 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 16:58:42[0m] (step=0006080) loss=0.7550 img=0.6845 rna=0.0742 align=0.0057 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 16:58:54[0m] (step=0006100) loss=0.7488 img=0.6734 rna=0.0768 align=0.0055 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:59:05[0m] (step=0006120) loss=0.7409 img=0.6635 rna=0.0752 align=0.0068 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:59:17[0m] (step=0006140) loss=0.7565 img=0.6768 rna=0.0750 align=0.0044 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 16:59:29[0m] (step=0006160) loss=0.7321 img=0.6506 rna=0.0775 align=0.0046 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 16:59:55[0m] [epoch 45] refreshed last.pt @ step 6164
+[[34m2026-07-03 16:59:55[0m] Beginning epoch 46...
+[[34m2026-07-03 17:00:05[0m] (step=0006180) loss=0.7530 img=0.6762 rna=0.0756 align=0.0060 corr=0.0004 steps/s=0.55
+[[34m2026-07-03 17:00:17[0m] (step=0006200) loss=0.7529 img=0.6593 rna=0.0770 align=0.0057 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 17:00:28[0m] (step=0006220) loss=0.7322 img=0.6540 rna=0.0734 align=0.0044 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 17:00:40[0m] (step=0006240) loss=0.7467 img=0.6717 rna=0.0730 align=0.0057 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:00:52[0m] (step=0006260) loss=0.7367 img=0.6700 rna=0.0789 align=0.0081 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:01:04[0m] (step=0006280) loss=0.7443 img=0.6632 rna=0.0777 align=0.0050 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:01:39[0m] [epoch 46] refreshed last.pt @ step 6298
+[[34m2026-07-03 17:01:39[0m] Beginning epoch 47...
+[[34m2026-07-03 17:01:41[0m] (step=0006300) loss=0.7505 img=0.6805 rna=0.0759 align=0.0076 corr=0.0004 steps/s=0.54
+[[34m2026-07-03 17:01:52[0m] (step=0006320) loss=0.7367 img=0.6898 rna=0.0735 align=0.0076 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:02:04[0m] (step=0006340) loss=0.7440 img=0.6775 rna=0.0763 align=0.0064 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 17:02:16[0m] (step=0006360) loss=0.7441 img=0.6778 rna=0.0767 align=0.0055 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:02:28[0m] (step=0006380) loss=0.7414 img=0.6631 rna=0.0746 align=0.0057 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:02:39[0m] (step=0006400) loss=0.7337 img=0.6651 rna=0.0731 align=0.0049 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:02:51[0m] (step=0006420) loss=0.7493 img=0.6653 rna=0.0737 align=0.0074 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:03:22[0m] [epoch 47] refreshed last.pt @ step 6432
+[[34m2026-07-03 17:03:22[0m] Beginning epoch 48...
+[[34m2026-07-03 17:03:27[0m] (step=0006440) loss=0.7526 img=0.6667 rna=0.0762 align=0.0041 corr=0.0004 steps/s=0.55
+[[34m2026-07-03 17:03:39[0m] (step=0006460) loss=0.7341 img=0.6726 rna=0.0737 align=0.0047 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 17:03:51[0m] (step=0006480) loss=0.7404 img=0.6678 rna=0.0719 align=0.0060 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:04:02[0m] (step=0006500) loss=0.7403 img=0.6540 rna=0.0725 align=0.0059 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:04:14[0m] (step=0006520) loss=0.7424 img=0.6544 rna=0.0763 align=0.0058 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:04:26[0m] (step=0006540) loss=0.7465 img=0.6592 rna=0.0755 align=0.0049 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:04:38[0m] (step=0006560) loss=0.7455 img=0.6792 rna=0.0740 align=0.0061 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:05:05[0m] [epoch 48] refreshed last.pt @ step 6566
+[[34m2026-07-03 17:05:05[0m] Beginning epoch 49...
+[[34m2026-07-03 17:05:14[0m] (step=0006580) loss=0.7484 img=0.6402 rna=0.0764 align=0.0067 corr=0.0006 steps/s=0.55
+[[34m2026-07-03 17:05:25[0m] (step=0006600) loss=0.7405 img=0.6559 rna=0.0704 align=0.0072 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:05:37[0m] (step=0006620) loss=0.7319 img=0.6587 rna=0.0743 align=0.0063 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 17:05:49[0m] (step=0006640) loss=0.7306 img=0.6552 rna=0.0711 align=0.0053 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:06:01[0m] (step=0006660) loss=0.7335 img=0.6696 rna=0.0728 align=0.0063 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:06:12[0m] (step=0006680) loss=0.7362 img=0.6661 rna=0.0746 align=0.0045 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:06:24[0m] (step=0006700) loss=0.7508 img=0.6642 rna=0.0740 align=0.0056 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:06:48[0m] [epoch 49] refreshed last.pt @ step 6700
+[[34m2026-07-03 17:06:48[0m] Beginning epoch 50...
+[[34m2026-07-03 17:07:00[0m] (step=0006720) loss=0.7315 img=0.6569 rna=0.0726 align=0.0057 corr=0.0004 steps/s=0.55
+[[34m2026-07-03 17:07:12[0m] (step=0006740) loss=0.7471 img=0.6647 rna=0.0741 align=0.0040 corr=0.0003 steps/s=1.71
+[[34m2026-07-03 17:07:24[0m] (step=0006760) loss=0.7447 img=0.6749 rna=0.0737 align=0.0057 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:07:36[0m] (step=0006780) loss=0.7361 img=0.6638 rna=0.0764 align=0.0051 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:07:47[0m] (step=0006800) loss=0.7153 img=0.6544 rna=0.0739 align=0.0050 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:07:59[0m] (step=0006820) loss=0.7461 img=0.6630 rna=0.0730 align=0.0046 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:08:31[0m] [epoch 50] refreshed last.pt @ step 6834
+[[34m2026-07-03 17:08:31[0m] Beginning epoch 51...
+[[34m2026-07-03 17:08:35[0m] (step=0006840) loss=0.7465 img=0.6779 rna=0.0762 align=0.0047 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 17:08:47[0m] (step=0006860) loss=0.7424 img=0.6714 rna=0.0670 align=0.0043 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:08:59[0m] (step=0006880) loss=0.7416 img=0.6711 rna=0.0733 align=0.0049 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 17:09:10[0m] (step=0006900) loss=0.7194 img=0.6550 rna=0.0724 align=0.0056 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:09:22[0m] (step=0006920) loss=0.7386 img=0.6526 rna=0.0741 align=0.0054 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 17:09:34[0m] (step=0006940) loss=0.7424 img=0.6645 rna=0.0741 align=0.0048 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:09:46[0m] (step=0006960) loss=0.7370 img=0.6579 rna=0.0776 align=0.0084 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:10:15[0m] [epoch 51] refreshed last.pt @ step 6968
+[[34m2026-07-03 17:10:15[0m] Beginning epoch 52...
+[[34m2026-07-03 17:10:22[0m] (step=0006980) loss=0.7248 img=0.6490 rna=0.0748 align=0.0056 corr=0.0004 steps/s=0.55
+[[34m2026-07-03 17:10:34[0m] (step=0007000) loss=0.7348 img=0.6369 rna=0.0735 align=0.0042 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:11:09[0m] Saved checkpoint to results_combined/000-CPFlow-B-2-noise/checkpoints/0007000.pt (+ last.pt)
+[[34m2026-07-03 17:11:21[0m] (step=0007020) loss=0.7487 img=0.6736 rna=0.0754 align=0.0043 corr=0.0004 steps/s=0.42
+[[34m2026-07-03 17:11:33[0m] (step=0007040) loss=0.7298 img=0.6603 rna=0.0725 align=0.0048 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:11:45[0m] (step=0007060) loss=0.7299 img=0.6660 rna=0.0741 align=0.0054 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:11:56[0m] (step=0007080) loss=0.7375 img=0.6708 rna=0.0755 align=0.0055 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:12:08[0m] (step=0007100) loss=0.7411 img=0.6577 rna=0.0740 align=0.0047 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:12:32[0m] [epoch 52] refreshed last.pt @ step 7102
+[[34m2026-07-03 17:12:32[0m] Beginning epoch 53...
+[[34m2026-07-03 17:12:44[0m] (step=0007120) loss=0.7392 img=0.6606 rna=0.0757 align=0.0056 corr=0.0005 steps/s=0.56
+[[34m2026-07-03 17:12:55[0m] (step=0007140) loss=0.7233 img=0.6494 rna=0.0732 align=0.0053 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 17:13:07[0m] (step=0007160) loss=0.7409 img=0.6739 rna=0.0744 align=0.0050 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:13:19[0m] (step=0007180) loss=0.7299 img=0.6579 rna=0.0730 align=0.0046 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:13:31[0m] (step=0007200) loss=0.7321 img=0.6370 rna=0.0730 align=0.0055 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:13:42[0m] (step=0007220) loss=0.7217 img=0.6410 rna=0.0729 align=0.0056 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:14:16[0m] [epoch 53] refreshed last.pt @ step 7236
+[[34m2026-07-03 17:14:16[0m] Beginning epoch 54...
+[[34m2026-07-03 17:14:19[0m] (step=0007240) loss=0.7390 img=0.6685 rna=0.0751 align=0.0066 corr=0.0004 steps/s=0.55
+[[34m2026-07-03 17:14:30[0m] (step=0007260) loss=0.7343 img=0.6724 rna=0.0705 align=0.0051 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:14:42[0m] (step=0007280) loss=0.7421 img=0.6586 rna=0.0750 align=0.0091 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 17:14:54[0m] (step=0007300) loss=0.7291 img=0.6578 rna=0.0720 align=0.0053 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:15:05[0m] (step=0007320) loss=0.7472 img=0.6588 rna=0.0715 align=0.0047 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:15:17[0m] (step=0007340) loss=0.7343 img=0.6569 rna=0.0760 align=0.0052 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:15:29[0m] (step=0007360) loss=0.7456 img=0.6714 rna=0.0761 align=0.0057 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:16:02[0m] [epoch 54] refreshed last.pt @ step 7370
+[[34m2026-07-03 17:16:02[0m] Beginning epoch 55...
+[[34m2026-07-03 17:16:08[0m] (step=0007380) loss=0.7304 img=0.6509 rna=0.0747 align=0.0046 corr=0.0005 steps/s=0.51
+[[34m2026-07-03 17:16:20[0m] (step=0007400) loss=0.7452 img=0.6780 rna=0.0765 align=0.0041 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 17:16:32[0m] (step=0007420) loss=0.7232 img=0.6490 rna=0.0724 align=0.0042 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:16:43[0m] (step=0007440) loss=0.7292 img=0.6662 rna=0.0728 align=0.0051 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:16:55[0m] (step=0007460) loss=0.7231 img=0.6492 rna=0.0707 align=0.0051 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:17:07[0m] (step=0007480) loss=0.7281 img=0.6446 rna=0.0763 align=0.0040 corr=0.0006 steps/s=1.70
+[[34m2026-07-03 17:17:19[0m] (step=0007500) loss=0.7470 img=0.6752 rna=0.0744 align=0.0048 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:17:45[0m] [epoch 55] refreshed last.pt @ step 7504
+[[34m2026-07-03 17:17:45[0m] Beginning epoch 56...
+[[34m2026-07-03 17:17:55[0m] (step=0007520) loss=0.7506 img=0.6902 rna=0.0736 align=0.0050 corr=0.0004 steps/s=0.56
+[[34m2026-07-03 17:18:06[0m] (step=0007540) loss=0.7363 img=0.6577 rna=0.0712 align=0.0060 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:18:18[0m] (step=0007560) loss=0.7310 img=0.6436 rna=0.0718 align=0.0066 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:18:30[0m] (step=0007580) loss=0.7405 img=0.6707 rna=0.0722 align=0.0050 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:18:42[0m] (step=0007600) loss=0.7306 img=0.6543 rna=0.0720 align=0.0061 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:18:53[0m] (step=0007620) loss=0.7210 img=0.6612 rna=0.0731 align=0.0051 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:19:28[0m] [epoch 56] refreshed last.pt @ step 7638
+[[34m2026-07-03 17:19:28[0m] Beginning epoch 57...
+[[34m2026-07-03 17:19:30[0m] (step=0007640) loss=0.7534 img=0.6640 rna=0.0762 align=0.0052 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 17:19:41[0m] (step=0007660) loss=0.7509 img=0.6806 rna=0.0752 align=0.0055 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:19:53[0m] (step=0007680) loss=0.7269 img=0.6646 rna=0.0734 align=0.0053 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 17:20:05[0m] (step=0007700) loss=0.7388 img=0.6650 rna=0.0753 align=0.0047 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:20:16[0m] (step=0007720) loss=0.7467 img=0.6684 rna=0.0733 align=0.0048 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:20:28[0m] (step=0007740) loss=0.7341 img=0.6537 rna=0.0764 align=0.0049 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:20:40[0m] (step=0007760) loss=0.7119 img=0.6430 rna=0.0735 align=0.0035 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:21:11[0m] [epoch 57] refreshed last.pt @ step 7772
+[[34m2026-07-03 17:21:11[0m] Beginning epoch 58...
+[[34m2026-07-03 17:21:16[0m] (step=0007780) loss=0.7308 img=0.6600 rna=0.0762 align=0.0048 corr=0.0005 steps/s=0.55
+[[34m2026-07-03 17:21:28[0m] (step=0007800) loss=0.7270 img=0.6636 rna=0.0723 align=0.0056 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:21:39[0m] (step=0007820) loss=0.7271 img=0.6609 rna=0.0706 align=0.0056 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:21:51[0m] (step=0007840) loss=0.7368 img=0.6605 rna=0.0710 align=0.0060 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 17:22:03[0m] (step=0007860) loss=0.7334 img=0.6560 rna=0.0715 align=0.0061 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:22:15[0m] (step=0007880) loss=0.7446 img=0.6753 rna=0.0738 align=0.0068 corr=0.0004 steps/s=1.70
+[[34m2026-07-03 17:22:26[0m] (step=0007900) loss=0.7412 img=0.6702 rna=0.0716 align=0.0050 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:22:53[0m] [epoch 58] refreshed last.pt @ step 7906
+[[34m2026-07-03 17:22:53[0m] Beginning epoch 59...
+[[34m2026-07-03 17:23:02[0m] (step=0007920) loss=0.7287 img=0.6540 rna=0.0726 align=0.0059 corr=0.0004 steps/s=0.56
+[[34m2026-07-03 17:23:14[0m] (step=0007940) loss=0.7290 img=0.6528 rna=0.0762 align=0.0041 corr=0.0005 steps/s=1.71
+[[34m2026-07-03 17:23:26[0m] (step=0007960) loss=0.7272 img=0.6527 rna=0.0719 align=0.0060 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:23:37[0m] (step=0007980) loss=0.7413 img=0.6740 rna=0.0691 align=0.0061 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:23:49[0m] (step=0008000) loss=0.7331 img=0.6562 rna=0.0724 align=0.0052 corr=0.0005 steps/s=1.70
+[[34m2026-07-03 17:24:25[0m] Saved checkpoint to results_combined/000-CPFlow-B-2-noise/checkpoints/0008000.pt (+ last.pt)
+[[34m2026-07-03 17:24:36[0m] (step=0008020) loss=0.7366 img=0.6745 rna=0.0717 align=0.0050 corr=0.0004 steps/s=0.42
+[[34m2026-07-03 17:24:48[0m] (step=0008040) loss=0.7398 img=0.6654 rna=0.0719 align=0.0061 corr=0.0004 steps/s=1.71
+[[34m2026-07-03 17:25:12[0m] [epoch 59] refreshed last.pt @ step 8040
+[[34m2026-07-03 17:25:35[0m] [final] flushed last.pt @ step 8040
+[[34m2026-07-03 17:25:35[0m] Done!
